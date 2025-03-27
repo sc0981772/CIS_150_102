@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="StudentGradeManager.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StudentGradeManager">
+
+	<StackPanel Padding="20">
+		<TextBox x:Name="IDTextBox" PlaceholderText="ID" Margin="0,0,0,10"/>
+		<TextBox x:Name="FirstNameTextBox" PlaceholderText="First Name" Margin="0,0,0,10"/>
+		<TextBox x:Name="LastNameTextBox" PlaceholderText="Last Name" Margin="0,0,0,10"/>
+		<TextBox x:Name="ClassTextBox" PlaceholderText="Class" Margin="0,0,0,10"/>
+		<TextBox x:Name="CourseGradeTextBox" PlaceholderText="Course Grade" Margin="0,0,0,10"/>
+		<Button Content="Add Student" Click="AddStudent_Click" Margin="0,10,0,10"/>
+		<ListBox x:Name="StudentListBox" Height="200"/>
+		<Button Content="Save Students" Click="SaveStudents_Click" Margin="0,10,0,10"/>
+		<Button Content="Read Students" Click="ReadStudents_Click" Margin="0,10,0,10"/>
+		<TextBlock x:Name="ErrorTextBlock" Foreground="Red"/>
+	</StackPanel>
+</Page>
